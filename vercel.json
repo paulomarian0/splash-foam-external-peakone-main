@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/run-delete-sessions",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/run-active-sessions",
+      "schedule": "*/1 * * * *"
+    },
+    {
+      "path": "/api/cron/run-currency-update",
+      "schedule": "*/15 * * * *"
+    }
+  ]
+}

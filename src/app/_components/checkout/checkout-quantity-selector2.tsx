@@ -142,7 +142,7 @@ const QuantitySelector2 = ({
 
             <p className="text-[20px] text-[#000] font-bold">${price1}</p>
             <p className="text-[14px] text-[#5acd65] font-medium">
-              You Save ${(info.product.ogPrice1 - price1).toFixed(2)}
+              You Save ${(Number(info.product.ogPrice1) - price1).toFixed(2)}
             </p>
           </div>
         </div>
@@ -182,7 +182,7 @@ const QuantitySelector2 = ({
             </p>
             <p className="text-[20px] text-[#000] font-bold">${price2}</p>
             <p className="text-[14px] text-[#5acd65] font-medium">
-              You Save ${(info.product.ogPrice2 - price2).toFixed(2)}
+              You Save ${(Number(info.product.ogPrice2) - price2).toFixed(2)}
             </p>
           </div>
         </div>
@@ -218,7 +218,7 @@ const QuantitySelector2 = ({
             </p>
             <p className="text-[20px] text-[#000] font-bold">${price3}</p>
             <p className="text-[14px] text-[#5acd65] font-medium">
-              You Save ${(info.product.ogPrice3 - price3).toFixed(2)}
+              You Save ${(Number(info.product.ogPrice3) - price3).toFixed(2)}
             </p>
           </div>
         </div>

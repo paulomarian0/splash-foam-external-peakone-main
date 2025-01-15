@@ -1,11 +1,5 @@
 "use client";
 import React, { useEffect, useState, Suspense } from "react";
-import UpsellTemplate1 from "./upsell/upsell-template1";
-import UpsellTemplate2 from "./upsell/upsell-template2";
-import UpsellTemplate3 from "./upsell/upsell-template3";
-import UpsellTemplate4 from "./upsell/upsell-template4";
-import UpsellTemplate5 from "./upsell/upsell-template5";
-import UpsellTemplate6 from "./upsell/upsell-template6";
 import { UpsellPageType } from "@/interfaces/upsellPage";
 import { useSearchParams } from "next/navigation";
 import { useSession } from "../_context/SessionContext";
@@ -248,27 +242,6 @@ const UpsellPage = ({ info }: Props) => {
   return (
     <Suspense>
       <GrabURLParams />
-      {info.template === "1" && (
-        <UpsellTemplate1 info={info} queryString={queryString} />
-      )}
-      {info.template === "2" && (
-        <UpsellTemplate2 info={info} queryString={queryString} />
-      )}
-
-      {info.template === "3" && (
-        <UpsellTemplate3 info={info} queryString={queryString} />
-      )}
-
-      {info.template === "4" && (
-        <UpsellTemplate4 info={info} queryString={queryString} />
-      )}
-      {info.template === "5" && (
-        <UpsellTemplate5 info={info} queryString={queryString} />
-      )}
-
-      {info.template === "6" && (
-        <UpsellTemplate6 info={info} queryString={queryString} />
-      )}
     </Suspense>
   );
 };

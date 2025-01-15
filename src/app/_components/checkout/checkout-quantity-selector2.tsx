@@ -90,9 +90,6 @@ const QuantitySelector2 = ({
       setPrice3(price3 - parseFloat(info.product.couponValue));
       document.getElementById("price3")!.style.background = "none";
       document.getElementById("price4")!.style.background = "#5acd65";
-      await delay(200);
-      setPrice4(price4 - parseFloat(info.product.couponValue));
-      document.getElementById("price4")!.style.background = "none";
       setShowCouponFlag(true);
     };
     if (couponActive) {

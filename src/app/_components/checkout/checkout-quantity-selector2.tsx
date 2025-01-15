@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useSession } from "@/app/_context/SessionContext";
 import { CheckoutPageType } from "@/interfaces/checkoutPage";
 import { ProductInfoType } from "@/interfaces/productInfo";
 import { Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { delay } from "@/app/_utils/delay";
-import { PriceDisplaySimple } from "./checkout-price-display";
 
 type QuantityProps = {
   product: ProductInfoType;
